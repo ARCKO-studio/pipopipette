@@ -1,119 +1,259 @@
-# Politique de confidentialité – Pipopipette
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité – Pipopipette</title>
+<style>
+  :root{
+    --bg:#0a0e14;
+    --panel:#10151f;
+    --border:#1f2937;
+    --green:#39ff8f;
+    --pink:#ff3b7b;
+    --text:#e6edf3;
+    --muted:#8b98a8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(57,255,143,0.08), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(255,59,123,0.08), transparent 40%),
+      var(--bg);
+    color:var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height:1.65;
+    padding:0 0 60px 0;
+  }
+  header{
+    padding:48px 20px 28px;
+    text-align:center;
+    border-bottom:1px solid var(--border);
+    margin-bottom:36px;
+  }
+  header .badge{
+    display:inline-block;
+    font-family:'Courier New', monospace;
+    letter-spacing:3px;
+    font-size:12px;
+    color:var(--green);
+    border:1px solid var(--green);
+    border-radius:999px;
+    padding:4px 14px;
+    margin-bottom:16px;
+    text-shadow:0 0 8px rgba(57,255,143,0.6);
+    box-shadow:0 0 12px rgba(57,255,143,0.15) inset;
+  }
+  header h1{
+    margin:0 0 10px;
+    font-size:clamp(24px,5vw,34px);
+    background:linear-gradient(90deg, var(--green), var(--pink));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:800;
+  }
+  header p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+  }
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  .card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:26px 28px;
+    margin-bottom:22px;
+  }
+  h2{
+    color:var(--green);
+    font-size:18px;
+    letter-spacing:0.5px;
+    margin:0 0 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 8px var(--green);
+    flex-shrink:0;
+  }
+  h3{
+    color:var(--text);
+    font-size:15px;
+    margin:18px 0 8px;
+  }
+  p{ margin:0 0 12px; color:#c6d0da; font-size:15px; }
+  ul{ margin:0 0 12px; padding-left:20px; color:#c6d0da; font-size:15px; }
+  li{ margin-bottom:6px; }
+  strong{ color:var(--text); }
+  a{ color:var(--pink); text-decoration:none; border-bottom:1px dashed rgba(255,59,123,0.5); }
+  a:hover{ color:var(--green); border-color:rgba(57,255,143,0.6); }
+  .contact-box{
+    background:rgba(57,255,143,0.06);
+    border:1px solid rgba(57,255,143,0.35);
+    border-radius:10px;
+    padding:16px 20px;
+    text-align:center;
+    font-size:15px;
+  }
+  .contact-box a{ font-weight:700; }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin-top:40px;
+    padding:0 20px;
+  }
+  .warning{
+    background:rgba(255,59,123,0.07);
+    border:1px solid rgba(255,59,123,0.35);
+    border-radius:10px;
+    padding:14px 18px;
+    font-size:14px;
+    color:#f2c9d8;
+  }
+</style>
+</head>
+<body>
 
-**Dernière mise à jour : 10 septembre 2026**
+<header>
+  <div class="badge">PIPOPIPETTE</div>
+  <h1>Politique de confidentialité</h1>
+  <p>Dernière mise à jour : 10 septembre 2026</p>
+</header>
 
-La présente politique de confidentialité décrit comment l'application **Pipopipette** (éditée par ARCKO Studio, ci-après « nous ») collecte, utilise et protège les données des utilisateurs (ci-après « vous »).
+<main>
 
-En installant ou en utilisant Pipopipette, vous acceptez les pratiques décrites dans ce document.
+  <div class="card">
+    <p>La présente politique de confidentialité décrit comment l'application <strong>Pipopipette</strong> (éditée par ARCKO Studio, ci-après « nous ») collecte, utilise et protège les données des utilisateurs (ci-après « vous »).</p>
+    <p>En installant ou en utilisant Pipopipette, vous acceptez les pratiques décrites dans ce document.</p>
+  </div>
 
----
+  <div class="card">
+    <h2>1. Qui sommes-nous</h2>
+    <p>Pipopipette est un jeu développé par ARCKO Studio.</p>
+    <p><strong>Contact :</strong> <a href="mailto:arckocontactpro@gmail.com">arckocontactpro@gmail.com</a></p>
+  </div>
 
-## 1. Qui sommes-nous
+  <div class="card">
+    <h2>2. Données que nous collectons</h2>
 
-Pipopipette est un jeu développé par ARCKO Studio.
+    <h3>2.1 Compte et authentification</h3>
+    <p>Pour jouer en ligne, vous devez vous connecter avec un compte Google (via Firebase Authentication). Nous recevons à cette occasion :</p>
+    <ul>
+      <li>un identifiant unique de compte (UID Google/Firebase) ;</li>
+      <li>votre adresse e-mail associée au compte Google (utilisée uniquement pour l'authentification, jamais affichée aux autres joueurs).</li>
+    </ul>
+    <p>Votre nom et votre photo de profil Google <strong>ne sont ni affichés ni transmis</strong> aux autres joueurs : seuls le pseudo et l'avatar que vous choisissez dans l'application sont visibles par votre adversaire.</p>
 
-**Contact :** arckocontactpro@gmail.com
+    <h3>2.2 Profil créé dans l'application</h3>
+    <p>Vous choisissez librement dans l'application :</p>
+    <ul>
+      <li>un pseudo ;</li>
+      <li>un avatar parmi ceux proposés (gratuits ou débloqués).</li>
+    </ul>
+    <p>Ces informations sont stockées et associées à votre compte.</p>
 
----
+    <h3>2.3 Données de jeu</h3>
+    <ul>
+      <li>statistiques de jeu (victoires, défaites, séries, historique de scores) ;</li>
+      <li>éléments cosmétiques et couleurs débloqués ;</li>
+      <li>monnaie virtuelle du jeu (« lignes ») et son solde ;</li>
+      <li>paramètres de préférence (mode daltonien, réglages audio, etc.).</li>
+    </ul>
 
-## 2. Données que nous collectons
+    <h3>2.4 Données de partie en ligne</h3>
+    <p>Lorsque vous jouez en ligne (par code de salle ou matchmaking aléatoire), les informations suivantes sont temporairement stockées sur nos serveurs (Firebase Firestore) le temps de la partie : pseudo, avatar, couleur choisie, état de la grille et déroulement de la partie. Ces données sont supprimées ou expirent une fois la partie terminée.</p>
 
-### 2.1 Compte et authentification
-Pour jouer en ligne, vous devez vous connecter avec un compte Google (via Firebase Authentication). Nous recevons à cette occasion :
-- un identifiant unique de compte (UID Google/Firebase) ;
-- votre adresse e-mail associée au compte Google (utilisée uniquement pour l'authentification, jamais affichée aux autres joueurs).
+    <h3>2.5 Achats intégrés (cosmétiques)</h3>
+    <p>L'application propose des achats intégrés facultatifs (avatars et cosmétiques premium). Ces achats sont traités <strong>exclusivement par Google Play Billing</strong>.</p>
+    <div class="warning">
+      Nous ne collectons, ne stockons et n'avons jamais accès à vos informations de paiement (numéro de carte bancaire, coordonnées bancaires, etc.) : ces données sont gérées uniquement par Google Play. Nous recevons uniquement une confirmation que l'achat a été effectué, afin de débloquer le contenu correspondant sur votre compte.
+    </div>
+    <p style="margin-top:12px;">Pour toute question relative à un paiement, un remboursement ou une facturation, veuillez contacter directement le support Google Play.</p>
+  </div>
 
-Votre nom et votre photo de profil Google **ne sont ni affichés ni transmis** aux autres joueurs : seuls le pseudo et l'avatar que vous choisissez dans l'application sont visibles par votre adversaire.
+  <div class="card">
+    <h2>3. Pourquoi nous utilisons ces données</h2>
+    <p>Nous utilisons les données ci-dessus pour :</p>
+    <ul>
+      <li>vous permettre de vous connecter et de jouer en ligne contre d'autres joueurs ;</li>
+      <li>sauvegarder votre progression, vos statistiques et vos déblocages entre deux sessions ;</li>
+      <li>assurer le bon déroulement des parties en ligne (synchronisation en temps réel) ;</li>
+      <li>débloquer les contenus cosmétiques que vous avez achetés ;</li>
+      <li>améliorer la stabilité et le fonctionnement de l'application.</li>
+    </ul>
+    <p>Nous ne vendons ni ne louons vos données à des tiers, et nous ne les utilisons pas à des fins publicitaires.</p>
+  </div>
 
-### 2.2 Profil créé dans l'application
-Vous choisissez librement dans l'application :
-- un pseudo ;
-- un avatar parmi ceux proposés (gratuits ou débloqués).
+  <div class="card">
+    <h2>4. Partage des données</h2>
+    <p>Vos données sont hébergées et traitées via les services suivants, nécessaires au fonctionnement de l'application :</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Authentication, Firestore) – hébergement, authentification et synchronisation des parties en ligne ;</li>
+      <li><strong>Google Play Billing</strong> – traitement des achats intégrés.</li>
+    </ul>
+    <p>Ces prestataires peuvent traiter vos données conformément à leurs propres règles de confidentialité (Google Privacy Policy).</p>
+    <p>Nous ne partageons vos données avec aucun autre tiers, sauf obligation légale.</p>
+  </div>
 
-Ces informations sont stockées et associées à votre compte.
+  <div class="card">
+    <h2>5. Conservation et suppression des données</h2>
+    <p>Vos données de compte et de progression sont conservées tant que vous utilisez l'application. Vous pouvez demander la suppression de votre compte et des données associées à tout moment en nous contactant à l'adresse indiquée ci-dessus. Nous procéderons à la suppression dans un délai raisonnable, sauf si une conservation plus longue est requise par la loi.</p>
+  </div>
 
-### 2.3 Données de jeu
-Nous enregistrons des données liées à votre progression et à vos parties :
-- statistiques de jeu (victoires, défaites, séries, historique de scores) ;
-- éléments cosmétiques et couleurs débloqués ;
-- monnaie virtuelle du jeu (« lignes ») et son solde ;
-- paramètres de préférence (mode daltonien, réglages audio, etc.).
+  <div class="card">
+    <h2>6. Sécurité</h2>
+    <p>Nous mettons en œuvre des mesures raisonnables (règles de sécurité Firebase, authentification via Google) pour protéger vos données contre tout accès non autorisé. Aucune méthode de transmission ou de stockage n'étant toutefois totalement sécurisée, nous ne pouvons garantir une sécurité absolue.</p>
+  </div>
 
-### 2.4 Données de partie en ligne
-Lorsque vous jouez en ligne (par code de salle ou matchmaking aléatoire), les informations suivantes sont temporairement stockées sur nos serveurs (Firebase Firestore) le temps de la partie : pseudo, avatar, couleur choisie, état de la grille et déroulement de la partie. Ces données sont supprimées ou expirent une fois la partie terminée.
+  <div class="card">
+    <h2>7. Enfants et jeunes utilisateurs</h2>
+    <p>Pipopipette n'est pas spécifiquement destiné aux enfants de moins de 13 ans (ou l'âge minimum équivalent dans votre pays). Nous ne collectons pas sciemment de données personnelles auprès d'enfants en dessous de cet âge sans le consentement d'un parent ou tuteur légal. Si vous pensez qu'un enfant nous a fourni des données personnelles sans ce consentement, contactez-nous afin que nous puissions les supprimer.</p>
+  </div>
 
-### 2.5 Achats intégrés (cosmétiques)
-L'application propose des achats intégrés facultatifs (avatars et cosmétiques premium). Ces achats sont traités **exclusivement par Google Play Billing**.
+  <div class="card">
+    <h2>8. Vos droits</h2>
+    <p>Selon votre pays de résidence (par exemple le RGPD pour les utilisateurs européens), vous disposez de droits sur vos données personnelles, notamment :</p>
+    <ul>
+      <li>droit d'accès à vos données ;</li>
+      <li>droit de rectification ;</li>
+      <li>droit à l'effacement (« droit à l'oubli ») ;</li>
+      <li>droit à la portabilité de vos données.</li>
+    </ul>
+    <p>Pour exercer ces droits, contactez-nous à l'adresse ci-dessous.</p>
+  </div>
 
-- Nous **ne collectons, ne stockons et n'avons jamais accès** à vos informations de paiement (numéro de carte bancaire, coordonnées bancaires, etc.) : ces données sont gérées uniquement par Google Play.
-- Nous recevons uniquement une confirmation que l'achat a été effectué, afin de débloquer le contenu correspondant sur votre compte.
-- Pour toute question relative à un paiement, un remboursement ou une facturation, veuillez contacter directement le support Google Play.
+  <div class="card">
+    <h2>9. Modifications de cette politique</h2>
+    <p>Cette politique de confidentialité peut être mise à jour périodiquement, notamment en cas d'évolution de l'application ou de la réglementation. La date de dernière mise à jour figure en haut de ce document. En cas de changement important, nous vous en informerons via l'application.</p>
+  </div>
 
----
+  <div class="card">
+    <h2>10. Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité ou vos données personnelles :</p>
+    <div class="contact-box">
+      📧 <a href="mailto:arckocontactpro@gmail.com">arckocontactpro@gmail.com</a>
+    </div>
+  </div>
 
-## 3. Pourquoi nous utilisons ces données
+</main>
 
-Nous utilisons les données ci-dessus pour :
-- vous permettre de vous connecter et de jouer en ligne contre d'autres joueurs ;
-- sauvegarder votre progression, vos statistiques et vos déblocages entre deux sessions ;
-- assurer le bon déroulement des parties en ligne (synchronisation en temps réel) ;
-- débloquer les contenus cosmétiques que vous avez achetés ;
-- améliorer la stabilité et le fonctionnement de l'application.
+<footer>
+  © 2026 ARCKO Studio — Pipopipette
+</footer>
 
-Nous ne vendons ni ne louons vos données à des tiers, et nous ne les utilisons pas à des fins publicitaires.
-
----
-
-## 4. Partage des données
-
-Vos données sont hébergées et traitées via les services suivants, nécessaires au fonctionnement de l'application :
-- **Google Firebase** (Authentication, Firestore) – hébergement, authentification et synchronisation des parties en ligne ;
-- **Google Play Billing** – traitement des achats intégrés.
-
-Ces prestataires peuvent traiter vos données conformément à leurs propres règles de confidentialité (Google Privacy Policy).
-
-Nous ne partageons vos données avec aucun autre tiers, sauf obligation légale.
-
----
-
-## 5. Conservation et suppression des données
-
-Vos données de compte et de progression sont conservées tant que vous utilisez l'application. Vous pouvez demander la suppression de votre compte et des données associées à tout moment en nous contactant à l'adresse indiquée ci-dessus. Nous procéderons à la suppression dans un délai raisonnable, sauf si une conservation plus longue est requise par la loi.
-
----
-
-## 6. Sécurité
-
-Nous mettons en œuvre des mesures raisonnables (règles de sécurité Firebase, authentification via Google) pour protéger vos données contre tout accès non autorisé. Aucune méthode de transmission ou de stockage n'étant toutefois totalement sécurisée, nous ne pouvons garantir une sécurité absolue.
-
----
-
-## 7. Enfants et jeunes utilisateurs
-
-Pipopipette n'est pas spécifiquement destiné aux enfants de moins de 13 ans (ou l'âge minimum équivalent dans votre pays). Nous ne collectons pas sciemment de données personnelles auprès d'enfants en dessous de cet âge sans le consentement d'un parent ou tuteur légal. Si vous pensez qu'un enfant nous a fourni des données personnelles sans ce consentement, contactez-nous afin que nous puissions les supprimer.
-
----
-
-## 8. Vos droits
-
-Selon votre pays de résidence (par exemple le RGPD pour les utilisateurs européens), vous disposez de droits sur vos données personnelles, notamment :
-- droit d'accès à vos données ;
-- droit de rectification ;
-- droit à l'effacement (« droit à l'oubli ») ;
-- droit à la portabilité de vos données.
-
-Pour exercer ces droits, contactez-nous à arckocontactpro@gmail.com.
-
----
-
-## 9. Modifications de cette politique
-
-Cette politique de confidentialité peut être mise à jour périodiquement, notamment en cas d'évolution de l'application ou de la réglementation. La date de dernière mise à jour figure en haut de ce document. En cas de changement important, nous vous en informerons via l'application.
-
----
-
-## 10. Contact
-
-Pour toute question concernant cette politique de confidentialité ou vos données personnelles :
-
-**E-mail :** arckocontactpro@gmail.com
+</body>
+</html>
