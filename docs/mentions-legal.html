@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales – Pipopipette</title>
+<style>
+  :root{
+    --bg:#0a0e14;
+    --panel:#10151f;
+    --border:#1f2937;
+    --green:#39ff8f;
+    --pink:#ff3b7b;
+    --text:#e6edf3;
+    --muted:#8b98a8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(57,255,143,0.08), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(255,59,123,0.08), transparent 40%),
+      var(--bg);
+    color:var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height:1.65;
+    padding:0 0 60px 0;
+  }
+  header{
+    padding:48px 20px 28px;
+    text-align:center;
+    border-bottom:1px solid var(--border);
+    margin-bottom:36px;
+  }
+  header .badge{
+    display:inline-block;
+    font-family:'Courier New', monospace;
+    letter-spacing:3px;
+    font-size:12px;
+    color:var(--green);
+    border:1px solid var(--green);
+    border-radius:999px;
+    padding:4px 14px;
+    margin-bottom:16px;
+    text-shadow:0 0 8px rgba(57,255,143,0.6);
+    box-shadow:0 0 12px rgba(57,255,143,0.15) inset;
+  }
+  header h1{
+    margin:0 0 10px;
+    font-size:clamp(24px,5vw,34px);
+    background:linear-gradient(90deg, var(--green), var(--pink));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:800;
+  }
+  header p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+  }
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  .card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:26px 28px;
+    margin-bottom:22px;
+  }
+  h2{
+    color:var(--green);
+    font-size:18px;
+    letter-spacing:0.5px;
+    margin:0 0 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 8px var(--green);
+    flex-shrink:0;
+  }
+  h3{
+    color:var(--text);
+    font-size:15px;
+    margin:18px 0 8px;
+  }
+  p{ margin:0 0 12px; color:#c6d0da; font-size:15px; }
+  ul{ margin:0 0 12px; padding-left:20px; color:#c6d0da; font-size:15px; }
+  li{ margin-bottom:6px; }
+  strong{ color:var(--text); }
+  a{ color:var(--pink); text-decoration:none; border-bottom:1px dashed rgba(255,59,123,0.5); }
+  a:hover{ color:var(--green); border-color:rgba(57,255,143,0.6); }
+  .contact-box{
+    background:rgba(57,255,143,0.06);
+    border:1px solid rgba(57,255,143,0.35);
+    border-radius:10px;
+    padding:16px 20px;
+    text-align:center;
+    font-size:15px;
+  }
+  .contact-box a{ font-weight:700; }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin-top:40px;
+    padding:0 20px;
+  }
+  .warning{
+    background:rgba(255,59,123,0.07);
+    border:1px solid rgba(255,59,123,0.35);
+    border-radius:10px;
+    padding:14px 18px;
+    font-size:14px;
+    color:#f2c9d8;
+  }
+  .placeholder{
+    color:#ffd166;
+    font-style:italic;
+  }
+</style>
+</head>
+<body>
 
+<header>
+  <div class="badge">PIPOPIPETTE</div>
+  <h1>Mentions légales</h1>
+  <p>Dernière mise à jour : 10 septembre 2026</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>1. Éditeur de l'application</h2>
+    <p>L'application <strong>Pipopipette</strong> est éditée par :</p>
+    <ul>
+      <li>Éditeur : <strong>ARCKO Studio</strong></li>
+      <li>Statut : Développeur individuel</li>
+      <li>Adresse : 10 route du Bois le Roy, 86110 Thurageau, France</li>
+      <li>E-mail de contact : <a href="mailto:arckocontactpro@gmail.com">arckocontactpro@gmail.com</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2. Hébergement</h2>
+    <h3>2.1 Application</h3>
+    <p>L'application Pipopipette est distribuée via le <strong>Google Play Store</strong>, exploité par Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.</p>
+    <h3>2.2 Services en ligne et pages légales</h3>
+    <p>Les fonctionnalités en ligne du jeu (authentification, synchronisation des parties) sont hébergées par <strong>Google Firebase</strong> (Google Ireland Limited). Les présentes pages légales sont hébergées via <strong>GitHub Pages</strong>, un service de GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Propriété intellectuelle</h2>
+    <p>L'ensemble des éléments constituant l'application Pipopipette (nom, logo, graphismes, code source, sons, textes) est la propriété exclusive d'ARCKO Studio, sauf mention contraire explicite.</p>
+    <p>Toute reproduction, représentation, modification ou exploitation, totale ou partielle, de ces éléments, par quelque procédé que ce soit, sans autorisation préalable, est interdite et pourrait constituer une contrefaçon.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Responsabilité</h2>
+    <p>Nous nous efforçons d'assurer l'exactitude et la mise à jour des informations diffusées dans l'application, sans garantir l'absence totale d'erreurs ou d'interruptions de service.</p>
+    <p>L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation de l'application, d'une indisponibilité temporaire du service en ligne, ou d'une mauvaise utilisation par l'utilisateur.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Achats intégrés</h2>
+    <p>L'application propose des achats intégrés facultatifs (cosmétiques). Ces achats sont traités exclusivement par <strong>Google Play Billing</strong> ; l'éditeur n'a accès à aucune donnée bancaire. Pour plus de détails, consultez la <a href="./politique-confidentialite-pipopipette.html">politique de confidentialité</a> et les <a href="./cgu-pipopipette.html">conditions générales d'utilisation</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Droit applicable</h2>
+    <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Contact</h2>
+    <p>Pour toute question relative à ces mentions légales :</p>
+    <div class="contact-box">
+      📧 <a href="mailto:arckocontactpro@gmail.com">arckocontactpro@gmail.com</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 ARCKO Studio — Pipopipette
+</footer>
+
+</body>
+</html>
