@@ -131,7 +131,7 @@
 <header>
   <div class="badge">PIPOPIPETTE</div>
   <h1>Politique de confidentialité</h1>
-  <p>Dernière mise à jour : 10 septembre 2026</p>
+  <p>Dernière mise à jour : 1er octobre 2026</p>
 </header>
 
 <main>
@@ -156,7 +156,7 @@
       <li>un identifiant unique de compte (UID Google/Firebase) ;</li>
       <li>votre adresse e-mail associée au compte Google (utilisée uniquement pour l'authentification, jamais affichée aux autres joueurs).</li>
     </ul>
-    <p>Votre nom et votre photo de profil Google <strong>ne sont ni affichés ni transmis</strong> aux autres joueurs : seuls le pseudo et l'avatar que vous choisissez dans l'application sont visibles par votre adversaire.</p>
+    <p>Votre nom et votre photo de profil Google <strong>ne sont ni affichés ni transmis</strong> aux autres joueurs : seuls le pseudo et l'avatar que vous choisissez dans l'application sont visibles par vos adversaires et, le cas échéant, dans le classement mondial (voir 2.5).</p>
 
     <h3>2.2 Profil créé dans l'application</h3>
     <p>Vous choisissez librement dans l'application :</p>
@@ -175,14 +175,30 @@
     </ul>
 
     <h3>2.4 Données de partie en ligne</h3>
-    <p>Lorsque vous jouez en ligne (par code de salle ou matchmaking aléatoire), les informations suivantes sont temporairement stockées sur nos serveurs (Firebase Firestore) le temps de la partie : pseudo, avatar, couleur choisie, état de la grille et déroulement de la partie. Ces données sont supprimées ou expirent une fois la partie terminée.</p>
+    <p>Lorsque vous jouez en ligne (en 1 contre 1 ou en Battle Royale, par code de salle ou matchmaking aléatoire), les informations suivantes sont temporairement stockées sur nos serveurs (Firebase Firestore) le temps de la partie : pseudo, avatar, couleur choisie, état de la grille et déroulement de la partie. Ces données sont supprimées ou expirent une fois la partie terminée.</p>
 
-    <h3>2.5 Achats intégrés (cosmétiques)</h3>
+    <h3>2.5 Classement mondial</h3>
+    <p>Si vous êtes connecté avec votre compte Google, chaque victoire remportée <strong>en ligne contre de vrais joueurs</strong> (partie en 1 contre 1, ou Battle Royale comptant au moins deux joueurs humains) est enregistrée dans un classement mondial hébergé sur Firebase Firestore. Les parties contre l'IA et les parties locales ne sont pas comptabilisées.</p>
+    <p>Pour chaque période (jour, semaine, mois), nous enregistrons, associés à votre identifiant de compte :</p>
+    <ul>
+      <li>votre pseudo et votre avatar ;</li>
+      <li>votre nombre de victoires et le nombre de « lignes » gagnées ;</li>
+      <li>la date de la dernière mise à jour.</li>
+    </ul>
+    <div class="warning">
+      Ces informations (pseudo, avatar, victoires, lignes gagnées) sont <strong>visibles par tous les joueurs connectés</strong> qui consultent le classement. Votre adresse e-mail, votre nom et votre photo Google n'y apparaissent jamais. Si vous ne souhaitez pas figurer au classement, il vous suffit de jouer sans vous connecter à votre compte Google (le mode en ligne n'est alors pas disponible), ou de nous demander la suppression de vos entrées.
+    </div>
+
+    <h3 style="margin-top:18px;">2.6 Achats intégrés (cosmétiques)</h3>
     <p>L'application propose des achats intégrés facultatifs (avatars et cosmétiques premium). Ces achats sont traités <strong>exclusivement par Google Play Billing</strong>.</p>
     <div class="warning">
       Nous ne collectons, ne stockons et n'avons jamais accès à vos informations de paiement (numéro de carte bancaire, coordonnées bancaires, etc.) : ces données sont gérées uniquement par Google Play. Nous recevons uniquement une confirmation que l'achat a été effectué, afin de débloquer le contenu correspondant sur votre compte.
     </div>
     <p style="margin-top:12px;">Pour toute question relative à un paiement, un remboursement ou une facturation, veuillez contacter directement le support Google Play.</p>
+
+    <h3>2.7 Publicité</h3>
+    <p>L'application affiche des publicités (bannière et publicités plein écran) fournies par <strong>Google AdMob</strong>. Pour afficher, mesurer et limiter la répétition de ces publicités, AdMob peut collecter des données techniques telles que l'identifiant publicitaire de votre appareil, votre adresse IP, des informations sur l'appareil et le système, et des données d'interaction avec les annonces.</p>
+    <p>Ces données sont collectées directement par Google, conformément à ses propres règles ; nous n'y avons pas accès individuellement. Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire et limiter la personnalisation des annonces depuis les paramètres de votre appareil Android (<em>Paramètres › Google › Annonces</em> ou <em>Paramètres › Confidentialité › Annonces</em>, selon les modèles).</p>
   </div>
 
   <div class="card">
@@ -190,28 +206,32 @@
     <p>Nous utilisons les données ci-dessus pour :</p>
     <ul>
       <li>vous permettre de vous connecter et de jouer en ligne contre d'autres joueurs ;</li>
+      <li>établir et afficher le classement mondial des joueurs connectés ;</li>
       <li>sauvegarder votre progression, vos statistiques et vos déblocages entre deux sessions ;</li>
       <li>assurer le bon déroulement des parties en ligne (synchronisation en temps réel) ;</li>
       <li>débloquer les contenus cosmétiques que vous avez achetés ;</li>
+      <li>afficher des publicités qui financent le développement gratuit du jeu (via Google AdMob) ;</li>
       <li>améliorer la stabilité et le fonctionnement de l'application.</li>
     </ul>
-    <p>Nous ne vendons ni ne louons vos données à des tiers, et nous ne les utilisons pas à des fins publicitaires.</p>
+    <p>Nous ne vendons ni ne louons vos données à des tiers. Vos données de compte, de profil et de jeu ne sont pas utilisées par nous à des fins publicitaires ; seules les données techniques collectées directement par Google AdMob (voir 2.7) servent à l'affichage des publicités.</p>
   </div>
 
   <div class="card">
     <h2>4. Partage des données</h2>
     <p>Vos données sont hébergées et traitées via les services suivants, nécessaires au fonctionnement de l'application :</p>
     <ul>
-      <li><strong>Google Firebase</strong> (Authentication, Firestore) – hébergement, authentification et synchronisation des parties en ligne ;</li>
-      <li><strong>Google Play Billing</strong> – traitement des achats intégrés.</li>
+      <li><strong>Google Firebase</strong> (Authentication, Firestore) – hébergement, authentification, synchronisation des parties en ligne et classement mondial ;</li>
+      <li><strong>Google Play Billing</strong> – traitement des achats intégrés ;</li>
+      <li><strong>Google AdMob</strong> – affichage et mesure des publicités.</li>
     </ul>
-    <p>Ces prestataires peuvent traiter vos données conformément à leurs propres règles de confidentialité (Google Privacy Policy).</p>
+    <p>Ces prestataires peuvent traiter vos données conformément à leurs propres règles de confidentialité (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Règles de confidentialité de Google</a>).</p>
+    <p>Les pseudos, avatars et résultats du classement mondial sont par ailleurs visibles par les autres joueurs connectés (voir 2.5).</p>
     <p>Nous ne partageons vos données avec aucun autre tiers, sauf obligation légale.</p>
   </div>
 
   <div class="card">
     <h2>5. Conservation et suppression des données</h2>
-    <p>Vos données de compte et de progression sont conservées tant que vous utilisez l'application. Vous pouvez demander la suppression de votre compte et des données associées à tout moment en nous contactant à l'adresse indiquée ci-dessus. Nous procéderons à la suppression dans un délai raisonnable, sauf si une conservation plus longue est requise par la loi.</p>
+    <p>Vos données de compte et de progression sont conservées tant que vous utilisez l'application. Les données de partie en ligne sont supprimées ou expirent à la fin de la partie. Les entrées du classement mondial sont conservées pour la période à laquelle elles se rapportent (jour, semaine ou mois) et peuvent être archivées ou supprimées ensuite. Vous pouvez demander la suppression de votre compte et des données associées à tout moment en nous contactant à l'adresse indiquée ci-dessus. Nous procéderons à la suppression dans un délai raisonnable, sauf si une conservation plus longue est requise par la loi.</p>
   </div>
 
   <div class="card">
@@ -231,9 +251,10 @@
       <li>droit d'accès à vos données ;</li>
       <li>droit de rectification ;</li>
       <li>droit à l'effacement (« droit à l'oubli ») ;</li>
-      <li>droit à la portabilité de vos données.</li>
+      <li>droit à la portabilité de vos données ;</li>
+      <li>droit d'opposition, notamment au fait d'apparaître dans le classement mondial.</li>
     </ul>
-    <p>Pour exercer ces droits, contactez-nous à l'adresse ci-dessous.</p>
+    <p>Pour exercer ces droits, contactez-nous à l'adresse ci-dessous. Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>) ou de l'autorité de protection des données de votre pays.</p>
   </div>
 
   <div class="card">
